@@ -18,8 +18,8 @@ layer.add(border);
 
 stage.on("touchstart", function(event) {
 	var rect = new Kinetic.Circle({
-		x: stage.getTouchPotision().x,
-		y: stage.getTouchPotision().y,
+		x: stage.getTouchPosition().x,
+		y: stage.getTouchPosition().y,
 		width: 10,
 		height: 10,
 		fill: 'green',
