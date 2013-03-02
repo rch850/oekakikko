@@ -7,6 +7,15 @@ var stage = new Kinetic.Stage({
 // add the shape to the layer
 var layer = new Kinetic.Layer();
 
+var border = new Kinetic.Rect({
+	x: 10,
+	y: 10,
+	width: stage.getWidth() - 20,
+	height: stage.getHeight() - 20,
+	stroke: 'green'
+});
+layer.add(border);
+
 stage.on("touchstart", function(event) {
 	var rect = new Kinetic.Circle({
 		x: stage.getTouchPotision().x,
