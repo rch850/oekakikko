@@ -16,7 +16,7 @@ var border = new Kinetic.Rect({
 });
 layer.add(border);
 
-stage.on("touchstart", function(event) {
+border.on("touchstart", function(event) {
 	var rect = new Kinetic.Circle({
 		x: stage.getTouchPosition().x,
 		y: stage.getTouchPosition().y,
